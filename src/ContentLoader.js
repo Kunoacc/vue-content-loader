@@ -7,11 +7,11 @@ export default {
 
   props: {
     width: {
-      type: Number,
+      type: String,
       default: 400
     },
     height: {
-      type: Number,
+      type: String,
       default: 130
     },
     speed: {
@@ -58,7 +58,9 @@ export default {
     return (
       <svg
         {...data}
-        viewBox={`0 0 ${props.width} ${props.height}`}
+//         viewBox={`0 0 ${props.width} ${props.height}`}
+        width={props.width}
+        height={props.height}
         version="1.1"
         preserveAspectRatio={props.preserveAspectRatio}
       >
